@@ -1,0 +1,44 @@
+/* .welcome-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .welcome-content {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .welcome-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-content p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+  }
+  
+  .welcome-content .btn {
+    font-size: 1.25rem;
+    border-radius: 25px;
+    padding: 10px 30px;
+  }
+  
+  .welcome-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-group {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+  }
+  
+  .fa-5x {
+    margin: 0 10px;
+  }
+   */

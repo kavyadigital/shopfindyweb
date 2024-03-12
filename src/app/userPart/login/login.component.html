@@ -1,0 +1,72 @@
+<br>
+<div class="login-page bg-light">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-10 offset-lg-1">
+				<div class="bg-white shadow rounded">
+					<div class="row">
+						<div class="col-md-7 pe-0">
+							<div class="form-left h-100 py-5 px-5">
+								<div class="col-12">
+									<label>User Type<span class="text-danger">*</span></label>
+									<div class="input-group">
+										<div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+										<select class="form-control" #userType>
+											<option value="u">User</option>
+											<option value="b">Business User</option>
+										</select>
+									</div>
+								</div>
+								
+
+									<div class="col-12">
+										<label>Username<span class="text-danger">*</span></label>
+										<div class="input-group">
+											<div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+											<input type="text" #email class="form-control" placeholder="Enter Username" (keyup.enter)="login(email.value, pass.value,userType.value)">
+										</div>
+									</div>
+									<div class="col-12">
+										<label>Password<span class="text-danger">*</span></label>
+										<div class="input-group">
+											<div class="input-group-text"><i class="bi bi-lock-fill"></i></div>
+											<input type="password" #pass class="form-control" placeholder="Enter Password" (keyup.enter)="login(email.value, pass.value,userType.value)">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-check">
+										</div>
+									</div>
+								
+									<div class="row">
+										<div class="col-6">
+											<button type="submit" class="btn btn-dark px-4 float-start mt-4" routerLink="login"  (click)="login(email.value, pass.value,userType.value)">Login</button>
+										</div>
+									</div>
+									<br>
+									<div class="row">
+										<div class="col-4">
+											<a routerLink="/forget" class="float-end text-primary">Forgot Password?</a>
+										</div>
+										
+										<!-- <div class="col-4">
+											<a href="register" class="float-end text-primary">Register</a>
+										</div>
+										<div class="col-4">
+											<a href="bregister" class="float-end text-primary">Business Register?</a>
+										</div> -->
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5 ps-0 d-none d-md-block">
+							<div class="form-right h-100 bg-dark text-white text-center pt-5">
+								<br><br>
+								<img style="border-radius: 50%;" src="../../../assets/logo.png" width="200" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

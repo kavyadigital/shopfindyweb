@@ -1,0 +1,23 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="text-center">Submit OTP</h3>
+          </div>
+          <div class="card-body">
+        
+              <div class="form-group">
+                <label for="otpInput">Enter OTP</label>
+                <br>
+                <input #otp type="text" class="form-control" id="otpInput" name="otp" required>
+              </div>
+              <br>
+              <button type="submit" class="btn btn-primary btn-block" (click)="login(otp.value)">Submit</button>
+ 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

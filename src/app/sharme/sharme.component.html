@@ -1,0 +1,70 @@
+<app-header></app-header> <br /><br />
+<div>
+
+
+<div class="container mt-4">
+  <br>
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Share My Website</h2>
+        <hr>
+  
+        <!-- Share Form -->
+        <div class="card">
+          <div class="card-body">
+            <!-- <h5 class="card-title">Share your website</h5> -->
+          
+
+            <div style="text-align: center;"> 
+              <img width="100" src="../../../assets/logo.png" alt="">
+              <h1 style="color: #eb445a;">ShopFindy</h1>
+              <p style="color: #6e6c6b;">
+                Congratulations! $20.00 will be
+                deposited in your ShopFindy
+                Account for signing up and you
+                can immediately start shopping
+                and getting Cash Back.
+                Share with 
+              </p>
+              <h3 style="color: red;">Referreal code : {{code}}</h3>
+          </div>
+
+
+
+              <div class="mb-3">
+                <label for="websiteUrl" class="form-label">Share with Email</label>
+                <input type="text" class="form-control" id="websiteUrl" #email placeholder="Enter your Email to share">
+              </div>
+
+              <button type="submit" class="btn btn-primary" (click)="share(email,code)">Share to Mail</button>
+          
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-md-4">
+ 
+        <h2>Shared Websites</h2>
+        <hr>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <div>
+              <h5 class="mb-1">Website Name 1</h5>
+              <p class="mb-1">http://www.example1.com</p>
+              <p class="mb-1">Shared by User 1</p>
+              <p class="mb-1">Lorem ipsum dolor sit amet</p>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div>
+              <h5 class="mb-1">Website Name 2</h5>
+              <p class="mb-1">http://www.example2.com</p>
+              <p class="mb-1">Shared by User 2</p>
+              <p class="mb-1">Consectetur adipiscing elit</p>
+            </div>
+          </li>
+ 
+        </ul>
+      </div> -->
+    </div>
+  </div>
+</div>

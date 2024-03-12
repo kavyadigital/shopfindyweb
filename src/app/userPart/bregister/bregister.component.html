@@ -1,0 +1,252 @@
+<br>
+<div class="login-page bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <div class="bg-white shadow rounded">
+          <div class="row">
+            <div class="col-md-7 pe-0">
+              <div class="form-left h-100 py-5 px-5">
+                <div class="col-12">
+                  <label>Business Name<span class="text-danger">*</span></label>
+                  <div class="input-group">
+                    <div class="input-group-text">
+                      <i class="bi bi-person-circle"></i>
+                    </div>
+                    <input #bname
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter Business Name"
+                    />
+                  </div>
+                </div>
+
+
+            
+
+                <div class="col-12">
+                  <label>Mobile<span class="text-danger">*</span></label>
+                  <div class="input-group">
+                    <div class="input-group-text">
+                      <i class="bi bi-phone-fill"></i>
+                    </div>
+                    <input #mono
+                      type="number"
+                      class="form-control"
+                      placeholder="Enter Mobile Number"
+                    />
+                  </div>
+                </div>
+
+
+                
+                <div class="col-12">
+                  <label>Lanline<span class="text-danger">*</span></label>
+                  <div class="input-group">
+                    <div class="input-group-text">
+                      <i class="bi bi-person-circle"></i>
+                    </div>
+                    <input #landline
+                      type="number"
+                      class="form-control"
+                      placeholder="Enter your Landline Number (optional)"
+                    />
+                  </div>
+                </div> 
+
+                <div class="col-12">
+                  <label>Email<span class="text-danger">*</span></label>
+                  <div class="input-group">
+                    <div class="input-group-text">
+                      <i class="bi bi-person-circle"></i>
+                    </div>
+                    <input #email
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter Email"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label>Password<span class="text-danger">*</span></label>
+                  <div class="input-group">
+                    <div class="input-group-text">
+                      <i class="bi bi-lock-fill"></i>
+                    </div>
+                    <input #pass
+                      type="password"
+                      class="form-control"
+                      placeholder="Enter Password"
+                    />
+                  </div>
+                </div>
+
+               
+
+                <div class="row">
+                  <div class="col-6">
+                    <button type="submit" class="btn btn-dark px-4 float-start mt-4"  (click)="signup(bname.value,mono.value,landline.value,email.value,pass.value)">Register</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 ps-0 d-none d-md-block">
+              <div class="form-right h-100 bg-dark text-white text-center pt-5">
+				<br><br><br>
+                <img
+                  style="border-radius: 50%"
+                  src="../../../assets/logo.png"
+                  width="200"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <br> <br> <br>
+<div class="login-page bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="bg-white shadow rounded">
+            <div class="row">
+              <div class="col-md-7 pe-0">
+                <div class="form-left h-100 py-5 px-5">
+                  <div class="col-12">
+                    <label>Business Name<span class="text-danger">*</span></label>
+                    <div class="input-group">
+                      <div class="input-group-text">
+                        <i class="bi bi-person-circle"></i>
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter Business Name"
+                      />
+                    </div>
+                  </div>
+
+
+                  <div class="col-12">
+                    <label>Business Address<span class="text-danger">*</span></label>
+                    <div class="input-group">
+                      <div class="input-group-text">
+                        <i class="bi bi-person-circle"></i>
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter Address"
+                      />
+                    </div>
+                  </div>
+                     <div class="col-12">
+                    <label>Mobile<span class="text-danger">*</span></label>
+                    <div class="input-group">
+                      <div class="input-group-text">
+                        <i class="bi bi-phone-fill"></i>
+                      </div>
+                      <input
+                        type="number"
+                        class="form-control"
+                        placeholder="Enter Mobile Number"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label>Name<span class="text-danger">*</span></label>
+                    <div class="input-group">
+                      <div class="input-group-text">
+                        <i class="bi bi-person-circle"></i>
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter Name"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label>Email<span class="text-danger">*</span></label>
+                    <div class="input-group">
+                      <div class="input-group-text">
+                        <i class="bi bi-person-circle"></i>
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter Email"
+                      />
+                    </div>
+                  </div>
+
+
+  
+                  <div class="col-12">
+                    <label>Username<span class="text-danger">*</span></label>
+                    <div class="input-group">
+                      <div class="input-group-text">
+                        <i class="bi bi-person-fill"></i>
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter Username"
+                      />
+                    </div>
+                  </div>
+  
+                  <div class="col-12">
+                    <label>Password<span class="text-danger">*</span></label>
+                    <div class="input-group">
+                      <div class="input-group-text">
+                        <i class="bi bi-lock-fill"></i>
+                      </div>
+                      <input
+                        type="password"
+                        class="form-control"
+                        placeholder="Enter Password"
+                      />
+                    </div>
+                  </div>
+  
+                  <div class="col-sm-6">
+                    <div class="form-check"></div>
+                  </div>
+  
+                  <div class="col-sm-6"></div>
+                    <div class="row">
+                    <div class="col-6">
+                      <button type="submit" class="btn btn-dark px-4 float-start mt-4" routerLink="./otp">Register</button>
+                    </div>
+                   </div>
+                </div>
+              </div>
+              <div class="col-md-5 ps-0 d-none d-md-block">
+                <div class="form-right h-100 bg-dark text-white text-center pt-5">
+                  <br><br><br>
+                  <img
+                    style="border-radius: 50%"
+                    src="../../../assets/logo.png"
+                    width="200"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+   -->

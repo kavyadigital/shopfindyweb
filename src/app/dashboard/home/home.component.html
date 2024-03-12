@@ -1,0 +1,11 @@
+<app-header></app-header>
+<br><br><br>
+<nav style="padding: 15px;">
+  <a routerLink="./" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" ariaCurrentWhenActive="page">Home</a> 
+  <a routerLink="./cat1" routerLinkActive="active" ariaCurrentWhenActive="page">Hot Deal</a>&nbsp;&nbsp;
+  <a routerLink="./cat2" routerLinkActive="active" ariaCurrentWhenActive="page">5$deal page</a>
+  <a routerLink="./cat3" routerLinkActive="active" ariaCurrentWhenActive="page">10$deal page</a>
+  <a routerLink="./cat4" routerLinkActive="active" ariaCurrentWhenActive="page">20$deal page</a>
+</nav>
+
+<router-outlet></router-outlet>

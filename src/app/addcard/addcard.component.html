@@ -1,0 +1,78 @@
+<app-header></app-header> <br /><br />
+<div class="container mt-4">
+  <div class="row">
+          <!-- Debit Card Form Column -->
+      <div class="col-md-4">
+        <br>
+          <h2>Add Debit Card</h2>
+          <hr>
+
+          <!-- Debit Card Form -->
+          <div class="card">
+              <div class="card-body">
+                  <!-- <h5 class="card-title">Add your debit card details</h5> -->
+                  <form>
+                      <div class="mb-3">
+                          <!-- <label for="cardNumber" class="form-label">Card Number</label> -->
+                          <input type="number" class="form-control" id="cardNumber" #card_number placeholder="Enter card number">
+                      </div>
+                      <div class="mb-3">
+                        <!-- <label for="expirationDate" class="form-label">Expiration Month</label> -->
+                        <input type="number" class="form-control" id="expirationDate" #exp_month  placeholder="MM">
+                    </div>
+                    
+                      <div class="mb-3">
+                          <!-- <label for="expirationDate" class="form-label">Expiration Year</label> -->
+                          <input type="number" class="form-control" id="expirationDate" #exp_year placeholder="YY">
+                      </div>
+                      <div class="mb-3">
+                          <!-- <label for="cvv" class="form-label">CVV</label> -->
+                          <input type="number" class="form-control" id="cvv" #cvv placeholder="Enter CVV">
+                      </div>
+                      <div class="mb-3">
+                          <!-- <label for="cardHolderName" class="form-label">Cardholder Name</label> -->
+                          <input type="text" class="form-control" id="cardHolderName" #card_holder placeholder="Enter Cardholder Name">
+                      </div>
+                      <button type="submit" class="btn btn-primary" (click)="addcard(card_number,exp_month,exp_year,cvv,card_holder)">Add Card</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+
+        <!-- List of Cards Column -->
+        <div class="col-md-8">
+            <br>
+            <h2 style="text-align: center;">Your Cards</h2>
+            <div class="container mt-5">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>S.N.</th>
+                            <th>Card Holder</th>
+                            <th>Card Number</th>
+                            <th>Expiration Date</th>
+                            <th>CVV</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let list of card_list_me;let  i = index">
+                            <td>{{i+1}}</td>
+                            <td>{{list.card_holder}}</td>
+                            <td>{{list.card_no}}</td>
+                            <td>{{list.exp_date}}</td>
+                            <td>{{list.cvv}}</td>
+                            <td><img width="20" (click)="delete_card(list)" src="../../assets/5974771.png" alt=""></td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+            </div>
+         <!-- <ul class="list-group">
+              <li class="list-group-item" >{{list.card_no}}</li>
+          </ul> -->
+      </div>
+  </div>
+</div>
+
+  

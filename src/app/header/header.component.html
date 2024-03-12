@@ -1,0 +1,243 @@
+<div class="header" id="myHeader" class="bg-primary fixed-top">
+  <img
+    src="../../assets/logo.png"
+    routerLink="./"
+    class="imgs"
+    alt=""
+  />
+  <div style="color: #ffff; float: right">
+    <button type="button" class="btn btn-dark" routerLink="/home">
+      <i class="bi bi-house"></i>
+    </button>
+
+    <button
+    type="button"
+    class="btn btn-primary dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
+    <i class="bi bi-person-fill"></i>
+  </button>
+  <ul class="dropdown-menu text-danger" style="padding: 15px">
+  <li class="text-danger border-bottom border-dark" routerLink="/profile">
+      <i class="bi bi-person"></i>My Profile
+    </li>
+    <li class="text-danger border-bottom border-dark" (click)="logout()">
+      <i class="bi bi-person"></i>  Logout
+    </li>
+   
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+    <button
+      type="button"
+      class="btn btn-primary dropdown-toggle"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      <i class="bi bi-wallet-fill"></i>
+    </button>
+    <ul class="dropdown-menu text-danger" style="padding: 15px">
+      <li>
+        <h5><i class="bi bi-wallet-fill"></i> Wallet Balance ({{w_balance}}$)</h5>
+      </li>
+      <hr />
+
+      <li class="text-danger border-bottom border-dark" routerLink="/addmoney">
+        <i class="bi bi-wallet-fill"></i>My Wallet
+      </li>
+      <!-- <li class="text-danger border-bottom border-dark" routerLink="/addmoney">
+        <i class="bi bi-cash-coin"></i> withdraw amount
+      </li> -->
+      <li class="text-danger border-bottom border-dark" routerLink="/addmoney">
+        <i class="bi bi-list"></i> Transactions
+      </li>
+      <li class="text-danger border-bottom border-dark" routerLink="/addcard">
+        <i class="bi bi-cash-stack"></i> Add Card
+      </li>
+      <li class="text-danger border-bottom border-dark" routerLink="/addmoney">
+        <i class="bi bi-list"></i>My Referrals
+      </li>
+
+      <li class="text-danger border-bottom border-dark" routerLink="/share">
+        <i class="bi bi-share"></i>Share To other
+      </li>
+
+    </ul>
+
+
+
+    <button
+      type="button"
+      class="btn btn-primary dropdown-toggle"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      <i class="bi bi-list-ul"></i>
+    </button>
+    <ul class="dropdown-menu" style="padding: 15px">
+      <li class="text-danger border-bottom border-dark">
+        <h5>Store Categories</h5>
+      </li>
+      <hr />
+      <li class="text-danger border-bottom border-dark" *ngFor="let product of store_list_me">
+        <a routerLink="/stores">
+          <!-- <i class="bi bi-phone"></i> -->
+          <img width="15" src="{{url}}{{product.image}}" alt="">
+          {{product.s_name}}
+        </a>
+      <br><br>
+      </li>
+      
+      <!-- <li class="text-danger border-bottom border-dark">
+        <a routerLink="/cat2">
+          <i class="bi bi-laptop"></i>
+          Laptops
+        </a>
+      </li>
+      <br />
+      <li class="text-danger border-bottom border-dark">
+        <a routerLink="/cat3">
+          <i class="bi bi-headphones"></i>
+          Headphones
+        </a>
+      </li>
+      <br />
+      <li class="text-danger border-bottom border-dark">
+        <a routerLink="/cat4">
+          <i class="bi bi-watch"></i>
+          Watches
+        </a>
+      </li>
+      <br />
+      <li class="text-danger border-bottom border-dark">
+        <a routerLink="/cat5">
+          <i class="bi bi-tablet"></i>
+          Tablets
+        </a>
+      </li>
+      <br />
+      <li class="text-danger border-bottom border-dark">
+        <a routerLink="/cat6">
+          <i class="bi bi-tv"></i>
+          TVs
+        </a>
+      </li> -->
+    </ul>
+<!-- 
+    <button
+      type="button"
+      class="btn btn-primary dropdown-toggle"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      <i class="bi bi-gear"></i>
+    </button>
+    <ul class="dropdown-menu" style="padding: 15px">
+      <li class="text-danger border-bottom border-dark"><h5>Tools</h5></li>
+      <hr />
+      <li routerLink="activity" class="text-danger border-bottom border-dark">
+        <a>
+          <i class="bi bi-gear"></i>
+          Activity
+        </a>
+      </li>
+      <br />
+      <li routerLink="acsettings" class="text-danger border-bottom border-dark">
+        <a>
+          <i class="bi bi-gear"></i>
+          Account settings
+        </a>
+      </li>
+      <br />
+      <li routerLink="about" class="text-danger border-bottom border-dark">
+        <a>
+          <i class="bi bi-gear"></i>
+          About us
+        </a>
+      </li>
+      <br />
+      <li
+        routerLink="newsrelease"
+        class="text-danger border-bottom border-dark"
+      >
+        <a>
+          <i class="bi bi-gear"></i>
+          News Release
+        </a>
+      </li>
+      <br />
+      <li routerLink="contactus" class="text-danger border-bottom border-dark">
+        <a>
+          <i class="bi bi-gear"></i>
+          Contact Us
+        </a>
+      </li>
+      <br />
+    </ul>
+
+
+
+    <button
+      type="button"
+      class="btn btn-primary dropdown-toggle"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      <i class="bi bi-tools"></i>
+    </button>
+    <ul class="dropdown-menu" style="padding: 15px">
+      <li class="text-danger border-bottom border-dark"><h5>Utility</h5></li>
+      <br />
+
+      <li routerLink="howworkapp" class="text-danger border-bottom border-dark">
+        <a>
+          <i class="bi bi-tools"></i>
+          How to Use application
+        </a>
+      </li>
+      <br />
+
+      <li routerLink="FAQ" class="text-danger border-bottom border-dark">
+        <a>
+          <i class="bi bi-tools"></i>
+          FAQ
+        </a>
+      </li>
+      <br />
+
+      <li routerLink="tutorial" class="text-danger border-bottom border-dark">
+        <a>
+          <i class="bi bi-tools"></i>
+          Tutorial
+        </a>
+      </li>
+      <br />
+
+      <li routerLink="share" class="text-danger border-bottom border-dark">
+        <a>
+          <i class="bi bi-tools"></i>
+          Share website
+        </a>
+      </li>
+      <br />
+
+      <li routerLink="history" class="text-danger border-bottom border-dark">
+        <a>
+          <i class="bi bi-tools"></i>
+          History
+        </a>
+      </li>
+      <br />
+    </ul> -->
+  </div>
+</div>

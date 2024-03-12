@@ -1,0 +1,150 @@
+<br>
+<div class="login-page bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <div class="bg-white shadow rounded">
+          <div class="row">
+            <div class="col-md-7 pe-0">
+              <div class="form-left h-100 py-5 px-5">
+
+                <div class="col-12">
+                  <label>Enter Referral Code (optional)<span class="text-danger">*</span></label>
+                  <div class="input-group">
+                    <div class="input-group-text">
+                      <i class="bi bi-person-circle"></i>
+                    </div>
+                    <input 
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter Referral Code (optional)"
+                      [(ngModel)]="r_code"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label>Name<span class="text-danger">*</span></label>
+                  <div class="input-group">
+                    <div class="input-group-text">
+                      <i class="bi bi-person-circle"></i>
+                    </div>
+                    <input disabled
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter Name"
+                      value="{{name}}"
+                    />
+                  </div>
+                </div>
+
+
+                <div class="col-12">
+                    <label>Last Name<span class="text-danger">*</span></label>
+                    <div class="input-group">
+                      <div class="input-group-text">
+                        <i class="bi bi-person-circle"></i>
+                      </div>
+                      <input disabled
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter Last Name"
+                        value="{{lname}}"
+                      />
+                    </div>
+                  </div>
+
+
+                <div class="col-12">
+                  <label>Mobile<span class="text-danger">*</span></label>
+                  <div class="input-group">
+                    <div class="input-group-text">
+                      <i class="bi bi-phone-fill"></i>
+                    </div>
+                    <input disabled
+                      type="number"
+                      class="form-control"
+                      placeholder="Enter Mobile Number"
+                      value="{{mono}}"
+                    />
+                  </div>
+                </div>
+
+
+                <div class="col-12">
+                  <label>Email<span class="text-danger">*</span></label>
+                  <div class="input-group">
+                    <div class="input-group-text">
+                      <i class="bi bi-person-circle"></i>
+                    </div>
+                    <input disabled
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter Email"
+                      value="{{email}}"
+                    />
+                  </div>
+                </div>
+
+
+
+                <div class="col-12">
+                  <label>Address<span class="text-danger">*</span></label>
+                  <div class="input-group">
+                    <div class="input-group-text">
+                      <i class="bi bi-person-fill"></i>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter Address" #address
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12">
+                    <label>City<span class="text-danger">*</span></label>
+                    <div class="input-group">
+                      <div class="input-group-text">
+                        <i class="bi bi-person-fill"></i>
+                      </div>
+                      <input #city
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter City"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label>State<span class="text-danger">*</span></label>
+                    <div class="input-group">
+                      <div class="input-group-text">
+                        <i class="bi bi-person-fill"></i>
+                      </div>
+                      <input #state
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter State"
+                      />
+                    </div>
+                  </div>
+                <div class="col-sm-6">
+                  <div class="form-check"></div>
+                </div>
+                <div class="col-sm-6"></div>
+                <div class="row">
+                  <div class="col-6">
+                    <button type="submit" class="btn btn-dark px-4 float-start mt-4" (click)="completeaccount(address,city,state,r_code)" >Complete Account</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>

@@ -1,0 +1,63 @@
+nav a {
+    padding: 7px 18px;
+    text-decoration: none;
+    /* margin-right: 10px; */
+    /* margin-top: 10px; */
+    display: inline-block;
+    background-color:transparent;
+    color: white;
+    border-radius: 4px;
+  }
+  nav a:hover {
+    color: white;
+    background-color:darkgrey;
+  }
+  nav a.active {
+    background-color:rgb(59, 99, 230);
+    color: white;
+  }
+  nav{
+    background-color: hsl(357.42deg 72.44% 44.12%);;
+  }
+
+  html,body { 
+    height: 100%; 
+  }
+  
+  .global-container{
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+  }
+  
+  form{
+    padding-top: 10px;
+    font-size: 14px;
+    margin-top: 30px;
+  }
+  
+  .card-title{ font-weight:300; }
+  
+  .btn{
+    font-size: 14px;
+    margin-top:20px;
+  }
+  
+  
+  .login-form{ 
+    width:330px;
+    margin:20px;
+  }
+  
+  .sign-up{
+    text-align:center;
+    padding:20px 0 0;
+  }
+  
+  .alert{
+    margin-bottom:-30px;
+    font-size: 13px;
+    margin-top:20px;
+  }
